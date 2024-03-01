@@ -54,7 +54,7 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <Container>
-        <Container sx={{ textAlign: 'center' }}>
+        <Container sx={{ textAlign: 'center', paddingTop: '2rem'}}>
           <Typography
             variant="h1"
             fontWeight={'bold'}
