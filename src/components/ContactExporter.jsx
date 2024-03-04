@@ -11,7 +11,7 @@ export function ContactExporter({ contacts = [] }) {
             vcfData += `FN:${row.FirstName} ${row.LastName}\n`;
             vcfData += `ORG:${row.Organization};\n`;
             vcfData += `TITLE:${row.Title}\n`;
-            vcfData += `TEL;TYPE=VOICE,CELL;VALUE=text:${row.PhoneNumber}\n`;
+            vcfData += `TEL;TYPE=VOICE,CELL;VALUE=text:${row.Phone}\n`;
             vcfData += 'END:VCARD\n';
         });
         return vcfData;
